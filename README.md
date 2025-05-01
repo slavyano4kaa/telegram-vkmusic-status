@@ -4,6 +4,29 @@
 
 ## Инструкция
 
+### Установка
+
+### Шаг 1:
+Клонируем репозиторий с GitHub.
+```bash
+git clone https://github.com/slavyano4kaa/telegram-vkmusic-status.git
+```
+
+### Шаг 2:
+Переходим в папку репозитория.
+```bash
+cd telegram-vkmusic-status
+```
+
+### Шаг 3:
+Устанавливаем все зависимости из файла `requirements.txt` с помощью пакетного менеджера pip.
+
+```bash
+pip install -r requirements.txt
+```
+
+### Подготовка
+
 ### Шаг 1:
 На главной странице VK включите Трансляцию аудиозаписи на страницу  
 
@@ -35,9 +58,15 @@
 ![Ссылка на страницу](./images/asset_5.png)  
 
 ### Шаг 8:
-Укажите свои данные в переменных `app_token`, `user_id`, `defaultabout`, `api_id` и `api_hash` в файле main.py
+Укажите свои данные в переменных `app_token`, `user_id`, `defaultabout`, `api_id` и `api_hash` в файле **main.py**
 
-![Переменные](./images/asset_4.png)  
+```python
+app_token = 'yourapptoken'
+user_id = 'yourvkusername'
+defaultabout = 'youraboutme'
+api_id = 000000000
+api_hash = 'yourapihash'
+```
 
 `app_token` – ваш сервисный ключ доступа (шаг 3)
 
@@ -47,11 +76,8 @@
 
 `api_id` и `api_hash` – App Configuration вашего приложения Telegram (шаг 6)
 
-## ⚠️ Не храните main.py в общедоступных репозиториях. Ваши токены — ваша конфиденциальная информация.
 
-
-**Запуск приложения (Windows)**  
-1. Установите [последнюю версию Python](https://www.python.org/downloads/)
-`⚠️ Поставьте галочку "Add to PATH"`
-
-2. Запустите `start.bat`. Если окно сразу закрывается — просто перезагрузите ПК и попробуйте снова
+### Запуск приложения
+```bash
+python main.py
+```
