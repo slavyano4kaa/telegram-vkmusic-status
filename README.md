@@ -79,6 +79,7 @@ api_hash = 'yourapihash'
 
 ### Запуск приложения
 
+1. Запустите исполняемый файл
 ```bash
 python main.py
 ```
