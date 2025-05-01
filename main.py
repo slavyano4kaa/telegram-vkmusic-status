@@ -7,7 +7,7 @@ from telethon.tl.functions.account import UpdateProfileRequest
 ########################
 app_token = 'yourapptoken' # токен из vk.com/apps?act=manage
 user_id = 'yourvkusername' # id страницы или никнейм
-defaultabout = "youraboutme" # дефолтное описание в телеграме если ничего не играет
+defaultabout = 'youraboutme' # дефолтное описание в телеграме если ничего не играет
 api_id = 000000000 # api_id из my.telegram.org
 api_hash = 'yourapihash' # api_hash из my.telegram.org
 ########################
