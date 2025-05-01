@@ -78,6 +78,8 @@ api_hash = 'yourapihash'
 
 
 ### Запуск приложения
+
 ```bash
 python main.py
 ```
+2. Выполните вход в Telegram
